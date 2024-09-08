@@ -1,0 +1,94 @@
+.div_dinamic_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.dinamic_Form {
+    height: 200px;
+    width: 50vw;
+    border-radius: 10px;
+    background-color: #dcddfe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+
+}
+
+.lable_login,
+.label_pas {
+    color: #21235b;
+    margin-bottom: 10px;
+    flex-direction: row;
+    /* Лейбл и инпут будут в строку */
+    align-items: center;
+    /* Вертикальное выравнивание элементов */
+    justify-content: space-between;
+    /* Распределение пространства между лейблом и инпутом */
+
+}
+
+
+.input_login,
+.input_pas {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.input_login:focus,
+.input_pas:focus {
+    border-color: #21235b;
+    outline: none;
+
+
+
+}
+
+.error_message,
+.error_message_pas {
+    color: red;
+    font-size: 12px;
+    text-align: center;
+    /* Выравнивание по центру */
+    margin-top: 5px;
+    /* Отступ сверху от инпута */
+    position: relative;
+}
+
+.btn_dinamic_form {
+    cursor: pointer;
+    background-color: #eee6fe;
+    padding: 5px;
+    padding-inline: 10px;
+    border-radius: 5px;
+    border: 1px solid #21235b;
+    color: #21235b;
+    margin-top: 10px;
+}
+
+.btn_dinamic_form:hover {
+    background-color: #21235b;
+    color: #dcddfe;
+}
+
+
+
+@media (min-width:590) {
+
+    .lable_login,
+    .label_pas {
+        color: #21235b;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 16px;
+        /* color: #333;
+        margin-bottom: 10px;
+        display: block; */
+
+    }
+}
